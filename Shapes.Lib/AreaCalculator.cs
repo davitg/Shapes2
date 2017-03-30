@@ -9,16 +9,16 @@ namespace Shapes
 {
     public class AreaCalculator
     {
-        //This should be List<IShape>!!
-        private readonly ArrayList _shapes;
+        private readonly List<IShape> _shapes;
 
-        public AreaCalculator(ArrayList shapes)
+        public AreaCalculator(List<IShape> shapes)
         {
             _shapes = shapes;
         }
 
-        public double Sum()
+        public virtual double Sum()
         {
+            Console.WriteLine("AreaCalculator.Sum()");
             double sum = 0;
 
             foreach (var item in _shapes)

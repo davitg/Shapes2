@@ -11,13 +11,13 @@ namespace Shapes.ConsoleClient
     {
         static void Main(string[] args)
         {
-            var arrayList = new ArrayList();
+            var arrayList = new List<IShape>();
 
             arrayList.Add(new Circle(2));
             arrayList.Add(new Circle(5));
             arrayList.Add(new Circle(6));
 
-            AreaCalculator areaCalc = new AreaCalculator(arrayList);
+            AreaCalculator areaCalc = new VolumeCalculator(arrayList);
 
 
             Console.WriteLine("Sum = " + areaCalc.Sum().ToString());

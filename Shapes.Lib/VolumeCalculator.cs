@@ -9,12 +9,13 @@ namespace Shapes
 {
     public class VolumeCalculator : AreaCalculator
     {
-        public VolumeCalculator(ArrayList shapes) : base(shapes)
+        public VolumeCalculator(List<IShape> shapes) : base(shapes)
         {
         }
 
-        public double Sum()
+        public override double Sum()
         {
+            Console.WriteLine("VolumeCalculator.Sum()");
             throw new NotImplementedException();
         }
     }
