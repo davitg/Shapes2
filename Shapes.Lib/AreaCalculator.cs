@@ -9,7 +9,8 @@ namespace Shapes
 {
     public class AreaCalculator
     {
-        private ArrayList _shapes;
+        //This should be List<IShape>!!
+        private readonly ArrayList _shapes;
 
         public AreaCalculator(ArrayList shapes)
         {
@@ -25,9 +26,7 @@ namespace Shapes
                 var shape = item as IShape;
 
                 if (shape != null)
-                {
                     sum += shape.Area;
-                }
                 else
                     throw new Exception("Invalid Shape Exception");
 
