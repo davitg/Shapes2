@@ -17,7 +17,7 @@ namespace Shapes.ConsoleClient
             arrayList.Add(new Circle(5));
             arrayList.Add(new Circle(6));
 
-            AreaCalculator areaCalc = new VolumeCalculator(arrayList);
+            VolumeCalculator areaCalc = new VolumeCalculator(arrayList);
 
 
             Console.WriteLine("Sum = " + areaCalc.Sum().ToString());

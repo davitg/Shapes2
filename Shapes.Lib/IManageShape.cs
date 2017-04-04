@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace Shapes
 {
-    public interface IShape
+    public interface IManageShape
     {
-        double Area { get; }
-
-     
+        double Calculate();
     }
 }

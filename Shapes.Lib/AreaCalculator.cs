@@ -18,7 +18,6 @@ namespace Shapes
 
         public virtual double Sum()
         {
-            Console.WriteLine("AreaCalculator.Sum()");
             double sum = 0;
 
             foreach (var item in _shapes)

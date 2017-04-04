@@ -23,7 +23,7 @@ namespace Shapes
         public string ToHTML()
         {
             return $"<h1>Sum of the areas of provided shapes: {_calculator.Sum()}</h1>";
-
         }
+
     }
 }

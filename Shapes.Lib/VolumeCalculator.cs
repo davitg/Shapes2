@@ -15,7 +15,6 @@ namespace Shapes
 
         public override double Sum()
         {
-            Console.WriteLine("VolumeCalculator.Sum()");
             throw new NotImplementedException();
         }
     }
